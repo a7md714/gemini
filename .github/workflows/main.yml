@@ -13,11 +13,27 @@ run-script:
 runs-on: ubuntu-latest
 
 steps:
-
+            - name: nogil/python
+  # You may pin to the exact commit or the version.
+  # uses: jimkring/action-python-nogil@43a8724a2ba00075948b7e2d6c5dceaa35c46c9b
+  uses: jimkring/action-python-nogil@0.1
+  with:
+    # pip requirements file
+    requirements-file: # optional, default is requirements.txt
+    # command to execute
+    command: 
+    # command to execute
+    command2: # optional
+    # command to execute
+    command3: # optional
+    # command to execute
+    command4: # optional
+    # command to execute
+    command5: # optional
+    # command to execute
+    command6: # optional
+          
 - name: Checkout repository
-
-uses: actions/checkout@v2
-- name: Set up Python
 
 uses: actions/setup-python@v2
 
